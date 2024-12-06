@@ -24,6 +24,15 @@ either have a sufficiently recent libbpf installed on your system, or that you
 pulled down the libbpf git submodule (=git submodule init && git submodule
 update=).
 
+if you face issues in ./configure use the following commands
+
+=sudo apt update && sudo apt install pkg-config && sudo apt install m4=
+
+if you face issue in <pcap/dlt.h> not found use
+
+=sudo apt install libpcap-dev=
+
+
 For a general introduction to XDP, please see the [[https://github.com/xdp-project/xdp-tutorial][XDP tutorial]], and for more BPF
 and XDP examples, see the [[https://github.com/xdp-project/bpf-examples][bpf-examples repository]].
 
